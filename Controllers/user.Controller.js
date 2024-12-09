@@ -38,6 +38,7 @@ export const Login = async (req, res) => {
       path: "/",
       httpOnly: true,
       sameSite: "None",
+      secure: false,
 
     });
     return res.status(200).json({
