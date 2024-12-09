@@ -11,7 +11,7 @@ const app = express();
 //Global Middlewares
 app.use( 
   cors({
-    origin: [`https://taskify7.netlify.app`],
+    origin: [`https://taskify7.netlify.app` , `http://localhost:5173`],
     credentials:true,
     methods: [`GET`, `POST`, `PUT`, `PATCH`, `DELETE`],
   })
