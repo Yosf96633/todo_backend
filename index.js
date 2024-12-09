@@ -9,9 +9,9 @@ config();
 const port = process.env.PORT;
 const app = express();
 //Global Middlewares
-app.use(
+app.use( 
   cors({
-    origin: [`https://taskify7.netlify.app/`],
+    origin: [`https://taskify7.netlify.app`],
     credentials:true,
     methods: [`GET`, `POST`, `PUT`, `PATCH`, `DELETE`],
   })
